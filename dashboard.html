@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<button id="themeToggle" class="theme-toggle">
+  🌙
+</button>
+
+<body>
+
+<header>
+  🎓 Student Dashboard
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+  <div class="dashboard">
+    <div class="card">
+      <h3>Student Name</h3>
+      <p id="studentName"></p>
+    </div>
+    <div class="card">
+      <h3>Roll Number</h3>
+      <p id="rollNumber"></p>
+    </div>
+    <div class="card">
+  <h3>CGPA</h3>
+  <p id="cgpaText">0.00</p>
+  <div class="cgpa-bar">
+    <div id="cgpaFill"></div>
+  </div>
+</div>
+
+    <div class="card">
+      <h3>Average Attendance</h3>
+      <p id="attendance"></p>
+    </div>
+  </div>
+
+  <a href="attendance.html" class="attendance-link">📋 View Attendance</a>
+
+  <h2>📚 Marks Detail</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Mid Term</th>
+        <th>Final Term</th>
+      </tr>
+    </thead>
+    <tbody id="marksTable"></tbody>
+  </table>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+<div class="floating-icons">
+  <span>🎓</span>
+  <span>📘</span>
+  <span>💻</span>
+  <span>📊</span>
+  <span>🧠</span>
+</div>
+
+</html>

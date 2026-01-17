@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Attendance</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  📋 Attendance Details
+  <button class="logout-btn" onclick="logout()">Logout</button>
+</header>
+
+<div class="container">
+
+  <h2 id="studentName"></h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Subject</th>
+        <th>Attendance (%)</th>
+      </tr>
+    </thead>
+    <tbody id="attendanceTable"></tbody>
+  </table>
+
+  <br>
+  <a href="dashboard.html" class="attendance-link">⬅ Back to Dashboard</a>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
